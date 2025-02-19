@@ -1,7 +1,7 @@
 class ColorTheme {
   constructor(customColors = {}) {
     // ANSI Base Colors
-    this.opColors = {
+    this.baseColors = {
       // Reset
       reset: "\x1b[0m",
 
@@ -12,7 +12,7 @@ class ColorTheme {
       underline: "\x1b[4m",
       blink: "\x1b[5m",
 
-      // Op Colors
+      // Base Colors
       black: "\x1b[30m",
       red: "\x1b[31m",
       green: "\x1b[32m",
@@ -55,54 +55,54 @@ class ColorTheme {
     // Default Theme
     this.defaultTheme = {
       // Status Colors
-      success: this.opColors.brightGreen,
-      error: this.opColors.brightRed,
-      warning: this.opColors.brightYellow,
-      info: this.opColors.brightCyan,
-      debug: this.opColors.gray,
+      success: this.baseColors.brightGreen,
+      error: this.baseColors.brightRed,
+      warning: this.baseColors.brightYellow,
+      info: this.baseColors.brightCyan,
+      debug: this.baseColors.gray,
 
       // UI Elements
-      header: this.opColors.brightMagenta,
-      border: this.opeColors.cyan,
-      text: this.opColors.brightWhite,
-      link: this.opColors.brightCyan,
-      highlight: this.opColors.brightYellow,
+      header: this.baseColors.brightMagenta,
+      border: this.baseColors.cyan,
+      text: this.baseColors.brightWhite,
+      link: this.baseColors.brightCyan,
+      highlight: this.baseColors.brightYellow,
 
       // Progress Indicators
-      progress: this.opColors.brightCyan,
-      waiting: this.opColors.brightYellow,
-      complete: this.opColors.brightGreen,
-      failed: this.opColors.brightRed,
+      progress: this.baseColors.brightCyan,
+      waiting: this.baseColors.brightYellow,
+      complete: this.baseColors.brightGreen,
+      failed: this.baseColors.brightRed,
 
       // Data Display
-      value: this.opColors.brightYellow,
-      label: this.opColors.cyan,
+      value: this.baseColors.brightYellow,
+      label: this.baseColors.cyan,
 
       // Timer Elements
-      timerCount: this.opColors.brightCyan,
-      timerWarn: this.opColors.brightYellow,
-      timerExpired: this.opColors.brightRed,
+      timerCount: this.baseColors.brightCyan,
+      timerWarn: this.baseColors.brightYellow,
+      timerExpired: this.baseColors.brightRed,
 
       // Menu Elements
-      menuTitle: this.opColors.brightMagenta,
-      menuOption: this.opColors.brightCyan,
-      menuBorder: this.opColors.cyan,
-      menuSelected: this.opColors.brightYellow,
+      menuTitle: this.baseColors.brightMagenta,
+      menuOption: this.baseColors.brightCyan,
+      menuBorder: this.baseColors.cyan,
+      menuSelected: this.baseColors.brightYellow,
 
       // Account Related
-      accountName: this.opColors.brightMagenta,
-      accountInfo: this.opColors.brightCyan,
-      accountWarn: this.opColors.brightYellow,
-      accountError: this.opColors.brightRed,
+      accountName: this.baseColors.brightMagenta,
+      accountInfo: this.baseColors.brightCyan,
+      accountWarn: this.baseColors.brightYellow,
+      accountError: this.baseColors.brightRed,
 
       // Transaction Status
-      txPending: this.opColors.brightYellow,
-      txSuccess: this.opColors.brightGreen,
-      txFailed: this.opColors.brightRed,
-      txHash: this.opColors.brightCyan,
+      txPending: this.baseColors.brightYellow,
+      txSuccess: this.baseColors.brightGreen,
+      txFailed: this.baseColors.brightRed,
+      txHash: this.baseColors.brightCyan,
 
       // Always include reset
-      reset: this.opColors.reset,
+      reset: this.baseColors.reset,
     };
 
     // Merge custom colors with default theme
