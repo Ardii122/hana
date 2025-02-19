@@ -39,7 +39,7 @@ const customFormat = winston.format.combine(
     };
 
     // Color the timestamp using dim style
-    const coloredTimestamp = `${colors.baseColors.dim}${timestamp}${colors.colors.reset}`;
+    const coloredTimestamp = `${colors.opColors.dim}${timestamp}${colors.colors.reset}`;
 
     // Color the level
     const coloredLevel = `${levelColors[level]}${padLevel(level)}${
