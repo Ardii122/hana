@@ -190,7 +190,7 @@ class HanafudaClient {
       // Use max between baseFee and current gas price, add 10% priority fee
       // Convert to number first for Math.max, then back to BigInt
       const opGasPrice =
-        baseFee > currentGasPrice ? opFee : currentGasPrice;
+        opFee > currentGasPrice ? opFee : currentGasPrice;
       const priorityFee = (opGasPrice * BigInt(10)) / BigInt(100); // 10% increase
       const optimalGasPrice = opGasPrice + priorityFee;
 
